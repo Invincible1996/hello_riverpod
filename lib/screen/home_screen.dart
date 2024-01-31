@@ -18,8 +18,9 @@ class HomeScreen extends ConsumerWidget {
       authProvider,
       (value, next) {
         // if login success fetch user data from api
-        if (value!.isAuth) {
+        if (next.isAuth) {
           // fetch user data from api
+          Navigator.pop(context);
           ref.read(messageProvider.notifier).getMessageCount();
         }
       },

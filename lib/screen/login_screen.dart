@@ -16,7 +16,6 @@ class LoginScreen extends ConsumerWidget {
         child: ElevatedButton(
           onPressed: () {
             ref.read(authProvider.notifier).login();
-            Navigator.pop(context);
           },
           child: const Text('Login'),
         ),

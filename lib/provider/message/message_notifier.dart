@@ -11,7 +11,7 @@ class MessageNotifier extends StateNotifier<MessageState> {
   }
 
   getMessageCount() {
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 0), () {
       state =
           state.copyWith(isMessage: true, messageCount: state.messageCount + 1);
     });

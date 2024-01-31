@@ -3,4 +3,4 @@ import 'package:hello_riverpod/provider/auth/auth_notifier.dart';
 import 'package:hello_riverpod/provider/auth/auth_state.dart';
 
 final authProvider =
-    StateNotifierProvider<AuthNotifier, AuthState>((ref) => AuthNotifier());
+    StateNotifierProvider<AuthNotifier, AuthState>((ref) => AuthNotifier(ref));
